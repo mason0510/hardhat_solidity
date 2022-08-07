@@ -4,13 +4,29 @@ require('@openzeppelin/hardhat-upgrades');
 
 //hardhat项目配置项
 module.exports = {
-  solidity: "0.8.4", //使用的sodity库的版本
+  solidity:  {
+    compilers: [
+      {
+        version: "0.5.7"
+      },
+      {
+        version: "0.8.0"
+      },
+      {
+        version: "0.6.12"
+      }
+    ]
+  }, //使用的sodity库的版本
   networks: {
     local: {
-      url: 'http://127.0.0.1:8545', //本地RPC地址
+      url: 'http://127.0.0.1:7545', //本地RPC地址 7545 8545
       //本地区块链账户地址(需要启动运行npx hardhat node命令开启本地开发环境的区块链)
       //这些账户地址和秘钥每次重启区块链都是相同的,并且数据会重置
       accounts: [
+          //0x6fD631E6595Cf1F7582745909891A843cB2B0C42
+        '152a7c3e127eb1b04a8c5cf17d02eb0dc7dfdaa64531d28eed7d40e1b7eeb5eb',
+        '7d1d9607d92bef7aed27ee188aed76a7c3785d3435a2f1ad1084968210dc4d5a',
+         'b7fcc83d481ae1044889abec22c115c3fc4078871b4f27fff0514062d8e2da88',
         // 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266 (第一个账户地址及秘钥)
         '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80',
         // 0x70997970c51812dc3a010c7d01b50e0d17dc79c8 (第二个账户地址及秘钥)

@@ -27,7 +27,12 @@ npx hardhat run scripts/demo-upgradeable-deploy.js --network local
 ### 3.部署升级合约
 npx hardhat run scripts/demo-upgrade.js --network local
 
+###4.调用测试
+0x8937e2F1ee6286643952dfE4A97371385d088c49
 
+## remix部署
+共享当前文件夹
+remixd -s /Users/houzi/remix/ --remix-ide https://remix.ethereum.org
 
 
 
