@@ -15,6 +15,7 @@ update代理
 1.逻辑合约
 2.ProxyAdmin 合约
 3.代理合约（名为 TransparentUpgradeableProxy）
+备注:可升级合约的存储不能乱，即：只能新增存储项，不能修改顺序
 
 upgradeable步骤：
 1.部署新的逻辑合约
@@ -86,3 +87,8 @@ remixd -s /Users/houzi/remix/ --remix-ide https://remix.ethereum.org
 
 ##token 转账示例
 https://ethereum.stackexchange.com/questions/126443/error-transaction-reverted-without-a-reason-string
+
+## 其他
+https://stackoverflow.com/questions/70622074/set-gas-limit-on-contract-method-in-ethers-js
+https://learnblockchain.cn/docs/hardhat/tutorial/testing-contracts.html
+https://learnblockchain.cn/article/4333
