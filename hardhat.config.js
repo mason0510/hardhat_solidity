@@ -7,15 +7,66 @@ module.exports = {
   solidity:  {
     compilers: [
       {
-        version: "0.5.7"
+        version: "0.8.2",
       },
       {
-        version: "0.8.4"
+        version: "0.6.11",
       },
       {
-        version: "0.6.12"
-      }
-    ]
+        version: "0.6.6",
+      },
+      {
+        version: "0.8.4",
+      },
+      {
+        version: "0.4.8",
+      },
+      {
+        version: "0.4.23",
+      },
+      {
+        version: "0.5.16",
+      },
+      {
+        version: "0.6.11",
+      },
+      // {
+      //   version: "0.5.7"
+      // },
+      // {
+      //   version: "0.8.4"
+      // },
+      // {
+      //   version: "0.8.2"
+      // },
+      // {
+      //   version: "0.6.6"
+      // },
+      // {
+      //   version: "0.5.16"
+      // },
+      // {
+      //   version: "0.4.11"
+      // },
+      // {
+      //   version: "0.4.23"
+      // },
+      // {
+      //   version: "0.4.8"
+      // },
+      // {
+      //   version: "0.6.12"
+      // },
+      // {
+      //   version: "0.6.11"
+      // }
+    ],
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 1000,
+      },
+    },
   }, //使用的sodity库的版本
   networks: {
     local: {
@@ -38,6 +89,12 @@ module.exports = {
         // 0x15d34aaf54267db7d7c367839aaf71a00a2c6a65 (第五个账户地址及秘钥)
         '0x47e179ec197488593b187f80a00eb0da91f1b9d0b13f8733639f19c30a34926a',
       ]
+    },
+    hardhat: {
+      forking: {
+        url: "https://eth-mainnet.g.alchemy.com/v2/qdGBEfRBpOdC5iBfVHpIxYzyBhK1pgy5",
+        blockNumber: 14139081,
+      }
     }
   }
 };

@@ -1,10 +1,51 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Demo.sol": {
-      "lastModificationDate": 1659799930023,
-      "contentHash": "458177abbe7c51b684895d8b658e4004",
-      "sourceName": "contracts/Demo.sol",
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Attack.sol": {
+      "lastModificationDate": 1660090200134,
+      "contentHash": "081e7d293083e0b11eef3b43e34be352",
+      "sourceName": "contracts/Attack.sol",
+      "solcConfig": {
+        "version": "0.8.2",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+        "./Uniswap/Interfaces/IUniswapV2Router02.sol",
+        "./TcrToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Attack"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1660053434529,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
       "solcConfig": {
         "version": "0.8.4",
         "settings": {
@@ -31,16 +72,2366 @@
       },
       "imports": [],
       "versionPragmas": [
-        ">=0.8.0 <0.9.0"
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol": {
+      "lastModificationDate": 1660059780948,
+      "contentHash": "3fa31c3860f2b9585c3a98c64850829e",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Pair"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Uniswap/Interfaces/IUniswapV2Router02.sol": {
+      "lastModificationDate": 1659972645750,
+      "contentHash": "8225b93654ee37ce105f693e10c57ef1",
+      "sourceName": "contracts/Uniswap/Interfaces/IUniswapV2Router02.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IUniswapV2Router01.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "IUniswapV2Router02"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Uniswap/Interfaces/IUniswapV2Router01.sol": {
+      "lastModificationDate": 1659972645747,
+      "contentHash": "420c4502c714b054e6530e6f3c5f0ef0",
+      "sourceName": "contracts/Uniswap/Interfaces/IUniswapV2Router01.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "IUniswapV2Router01"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/unstructured_save_test/ImplementationV1.sol": {
+      "lastModificationDate": 1659942654479,
+      "contentHash": "e75545243f2961ebc7bce36d2b53a764",
+      "sourceName": "contracts/unstructured_save_test/ImplementationV1.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ImplementationV1"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/unstructured_save_test/ImplementationV2.sol": {
+      "lastModificationDate": 1659942654469,
+      "contentHash": "62da819816a86a01907ac919bf0f6909",
+      "sourceName": "contracts/unstructured_save_test/ImplementationV2.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ImplementationV1.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "ImplementationV2"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/AttackV2.sol": {
+      "lastModificationDate": 1660087856934,
+      "contentHash": "45e8696a873ceb15bdebb5a65aec5217",
+      "sourceName": "contracts/AttackV2.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Common/Context.sol": {
+      "lastModificationDate": 1659972697699,
+      "contentHash": "34c90732395e322a3d55bde02731b25a",
+      "sourceName": "contracts/Common/Context.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Governance/AccessControl.sol": {
+      "lastModificationDate": 1659972879683,
+      "contentHash": "9ead00edfcad727f6e9afaf01055a6ed",
+      "sourceName": "contracts/Governance/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Utils/EnumerableSet.sol",
+        "../Utils/Address.sol",
+        "../Common/Context.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Utils/EnumerableSet.sol": {
+      "lastModificationDate": 1659972352107,
+      "contentHash": "a28193f7f21d96ca03459b652542a1af",
+      "sourceName": "contracts/Utils/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Utils/Address.sol": {
+      "lastModificationDate": 1659972352089,
+      "contentHash": "efeb3c899f5d998dc6ed2d60d175e441",
+      "sourceName": "contracts/Utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11 <0.9.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Oracle/ReserveTracker.sol": {
+      "lastModificationDate": 1660056514878,
+      "contentHash": "6e42a70f06c6052419f19a1b34323fc4",
+      "sourceName": "contracts/Oracle/ReserveTracker.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Math/SafeMath.sol",
+        "../Math/Math.sol",
+        "../Uniswap/Interfaces/IUniswapV2Pair.sol",
+        "../Governance/AccessControl.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.12"
+      ],
+      "artifacts": [
+        "ReserveTracker"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Math/SafeMath.sol": {
+      "lastModificationDate": 1659972683724,
+      "contentHash": "14c0abfa84c66c5928c26566691a82c8",
+      "sourceName": "contracts/Math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Math/Math.sol": {
+      "lastModificationDate": 1659972683720,
+      "contentHash": "4b105df2bb6cc4d411b7676532b4504a",
+      "sourceName": "contracts/Math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Uniswap/Interfaces/IUniswapV2Pair.sol": {
+      "lastModificationDate": 1659972645732,
+      "contentHash": "8c44bdfcb7d99247042cb4f5c00aa29a",
+      "sourceName": "contracts/Uniswap/Interfaces/IUniswapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "IUniswapV2Pair"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Uniswap/UniswapV2Library.sol": {
+      "lastModificationDate": 1659972645767,
+      "contentHash": "c7be692e40c7407fd5e6374005066aac",
+      "sourceName": "contracts/Uniswap/UniswapV2Library.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Interfaces/IUniswapV2Pair.sol",
+        "./Interfaces/IUniswapV2Factory.sol",
+        "../Math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "UniswapV2Library"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Uniswap/Interfaces/IUniswapV2Factory.sol": {
+      "lastModificationDate": 1659972645743,
+      "contentHash": "dfd684aaf67b5e3d7632f934e1384820",
+      "sourceName": "contracts/Uniswap/Interfaces/IUniswapV2Factory.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "IUniswapV2Factory"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Uniswap/UniswapV2ERC20.sol": {
+      "lastModificationDate": 1659972645760,
+      "contentHash": "7e4c3ec7348c564cfdab75e66af751dc",
+      "sourceName": "contracts/Uniswap/UniswapV2ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Interfaces/IUniswapV2ERC20.sol",
+        "../Math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "UniswapV2ERC20"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Uniswap/Interfaces/IUniswapV2ERC20.sol": {
+      "lastModificationDate": 1659972645736,
+      "contentHash": "e9672a8ae046701ca14a154b0a489c9b",
+      "sourceName": "contracts/Uniswap/Interfaces/IUniswapV2ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "IUniswapV2ERC20"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Uniswap/UniswapV2Pair.sol": {
+      "lastModificationDate": 1660060019314,
+      "contentHash": "d4e920e0ca8a6c3bad6bc49598e10ff1",
+      "sourceName": "contracts/Uniswap/UniswapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Interfaces/IUniswapV2Pair.sol",
+        "./UniswapV2ERC20.sol",
+        "../Math/Math.sol",
+        "../Math/UQ112x112.sol",
+        "../ERC20/IERC20.sol",
+        "./Interfaces/IUniswapV2Factory.sol",
+        "./Interfaces/IUniswapV2Callee.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "UniswapV2Pair"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Math/UQ112x112.sol": {
+      "lastModificationDate": 1659972683726,
+      "contentHash": "0eec991ff90b1ee30fc12a573f01632e",
+      "sourceName": "contracts/Math/UQ112x112.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "UQ112x112"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC20/IERC20.sol": {
+      "lastModificationDate": 1659972853075,
+      "contentHash": "abecc523da5d600a7fd745ac00993fe6",
+      "sourceName": "contracts/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Common/Context.sol",
+        "../Math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Uniswap/Interfaces/IUniswapV2Callee.sol": {
+      "lastModificationDate": 1659972645739,
+      "contentHash": "5ac3e9618e2c9868e438ab0b9bf130a6",
+      "sourceName": "contracts/Uniswap/Interfaces/IUniswapV2Callee.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "IUniswapV2Callee"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Uniswap/UniswapV2Factory.sol": {
+      "lastModificationDate": 1659972645763,
+      "contentHash": "dc0287460751a56f6bdaa90765e14452",
+      "sourceName": "contracts/Uniswap/UniswapV2Factory.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Interfaces/IUniswapV2Factory.sol",
+        "./UniswapV2Pair.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "UniswapV2Factory"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC20/SafeERC20.sol": {
+      "lastModificationDate": 1659972853079,
+      "contentHash": "3abff10bbbfdf7c6aa0b76e8788885d3",
+      "sourceName": "contracts/ERC20/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../Math/SafeMath.sol",
+        "../Utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC20/ERC20.sol": {
+      "lastModificationDate": 1659972853070,
+      "contentHash": "752f8ed6456f902b47ca36b00fdb2c62",
+      "sourceName": "contracts/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Common/Context.sol",
+        "./IERC20.sol",
+        "../Math/SafeMath.sol",
+        "../Utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC20/ERC20Custom.sol": {
+      "lastModificationDate": 1659972853081,
+      "contentHash": "f8f442f2d65545ee52ab7486188efc72",
+      "sourceName": "contracts/ERC20/ERC20Custom.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Common/Context.sol",
+        "./IERC20.sol",
+        "../Math/SafeMath.sol",
+        "../Utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "ERC20Custom"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC20/draft-ERC20Permit.sol": {
+      "lastModificationDate": 1659972853086,
+      "contentHash": "bfa6b9f8ec2c897c3d1bacb3619768b8",
+      "sourceName": "contracts/ERC20/draft-ERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20Custom.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/draft-IERC20Permit.sol",
+        "@openzeppelin/contracts/utils/cryptography/draft-EIP712.sol",
+        "@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
+        "@openzeppelin/contracts/utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Permit"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/node_modules/@openzeppelin/contracts/token/ERC20/extensions/draft-IERC20Permit.sol": {
+      "lastModificationDate": 1660053443806,
+      "contentHash": "fb77f144244b9ab12533aa6ce85ef8c5",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/draft-IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/node_modules/@openzeppelin/contracts/utils/cryptography/draft-EIP712.sol": {
+      "lastModificationDate": 1660053441092,
+      "contentHash": "161aae4dc1450371d0f324488f66a9cf",
+      "sourceName": "@openzeppelin/contracts/utils/cryptography/draft-EIP712.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EIP712"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/node_modules/@openzeppelin/contracts/utils/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1660053441092,
+      "contentHash": "1dfb7cf7c7e2edae73403d50a59cc967",
+      "sourceName": "@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
+      "lastModificationDate": 1660053436663,
+      "contentHash": "74654e3ae5d7f39555055dfe244dab7a",
+      "sourceName": "@openzeppelin/contracts/utils/Counters.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1660053436663,
+      "contentHash": "cf46906c4035f51639a22265066a9e78",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Oracle/Oracle.sol": {
+      "lastModificationDate": 1659972667503,
+      "contentHash": "0197eaa7a4a15f22bc52542b9d3eac33",
+      "sourceName": "contracts/Oracle/Oracle.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/AccessControl.sol",
+        "@openzeppelin/contracts/utils/cryptography/ECDSA.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.12"
+      ],
+      "artifacts": [
+        "Oracle"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Math/SafeDecimalMath.sol": {
+      "lastModificationDate": 1659972683737,
+      "contentHash": "f07d9f64b493e6df2fc2a9d9d43c5351",
+      "sourceName": "contracts/Math/SafeDecimalMath.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "SafeDecimalMath"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC20/IERC20_Detailed.sol": {
+      "lastModificationDate": 1659972853084,
+      "contentHash": "9aa2129505ed3c3d818d6802eaf858e8",
+      "sourceName": "contracts/ERC20/IERC20_Detailed.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Common/Context.sol",
+        "../Math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "IERC20_Detailed"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Common/Ownable.sol": {
+      "lastModificationDate": 1660058274994,
+      "contentHash": "9eb7b1aae91ae26addc7784ccbc91211",
+      "sourceName": "contracts/Common/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.11 <=0.8.7"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC165/ERC165.sol": {
+      "lastModificationDate": 1659972825086,
+      "contentHash": "d31c046f86708c5f9d34448168d8bf82",
+      "sourceName": "contracts/ERC165/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC165/IERC165.sol": {
+      "lastModificationDate": 1659972825089,
+      "contentHash": "8575e4b7d617deb2b7adbfa42a2bd325",
+      "sourceName": "contracts/ERC165/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC721/ERC721.sol": {
+      "lastModificationDate": 1659972809223,
+      "contentHash": "b0f921afbedafcdf83113a35b40ad3f8",
+      "sourceName": "contracts/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./V8_0_0/Common/Context.sol",
+        "./IERC721.sol",
+        "./IERC721Metadata.sol",
+        "./IERC721Enumerable.sol",
+        "./IERC721Receiver.sol",
+        "../ERC165/ERC165.sol",
+        "./V8_0_0/Utils/Address.sol",
+        "./V8_0_0/Utils/EnumerableSet.sol",
+        "./V8_0_0/Utils/EnumerableMap.sol",
+        "./V8_0_0/Utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC721/V8_0_0/Common/Context.sol": {
+      "lastModificationDate": 1659972809215,
+      "contentHash": "d8f46c03b92451f7686b76adcd0c6e4e",
+      "sourceName": "contracts/ERC721/V8_0_0/Common/Context.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC721/IERC721.sol": {
+      "lastModificationDate": 1659972809227,
+      "contentHash": "2e5548b4210ef04056a6af053cd5b9e2",
+      "sourceName": "contracts/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC165/IERC165.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC721/IERC721Metadata.sol": {
+      "lastModificationDate": 1659972809230,
+      "contentHash": "874acaff1053ccf163c6b9c5e6e113dd",
+      "sourceName": "contracts/ERC721/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC721/IERC721Enumerable.sol": {
+      "lastModificationDate": 1659972809234,
+      "contentHash": "1af6c7fa7b957bffc0030c4cb2a55ca0",
+      "sourceName": "contracts/ERC721/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1659972809232,
+      "contentHash": "2d92cd688336c0373fdf1f11d81fc2fc",
+      "sourceName": "contracts/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC721/V8_0_0/Utils/Address.sol": {
+      "lastModificationDate": 1659972809201,
+      "contentHash": "814be9319f446615e8525705ee270db5",
+      "sourceName": "contracts/ERC721/V8_0_0/Utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC721/V8_0_0/Utils/EnumerableSet.sol": {
+      "lastModificationDate": 1659972809209,
+      "contentHash": "0d6f4cf9842327ec4f643acba0204932",
+      "sourceName": "contracts/ERC721/V8_0_0/Utils/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC721/V8_0_0/Utils/EnumerableMap.sol": {
+      "lastModificationDate": 1659972809206,
+      "contentHash": "71173ed5dad67b2400394d0e798d7e59",
+      "sourceName": "contracts/ERC721/V8_0_0/Utils/EnumerableMap.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableMap"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC721/V8_0_0/Utils/Strings.sol": {
+      "lastModificationDate": 1659972809203,
+      "contentHash": "0c921ced37a8cce7ac5071f9dd2e8f45",
+      "sourceName": "contracts/ERC721/V8_0_0/Utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC721/V8_0_0/Governance/AccessControl.sol": {
+      "lastModificationDate": 1659972809221,
+      "contentHash": "99cd20b16e44027e1ea35b32e13ecd39",
+      "sourceName": "contracts/ERC721/V8_0_0/Governance/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Utils/EnumerableSet.sol",
+        "../Utils/Address.sol",
+        "../Common/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC20/IWETH.sol": {
+      "lastModificationDate": 1659972853073,
+      "contentHash": "cf2c7f0b143316760b8afc019135d722",
+      "sourceName": "contracts/ERC20/IWETH.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC721/V8_0_0/Math/SafeMath.sol": {
+      "lastModificationDate": 1659972809194,
+      "contentHash": "4898799a296bf39f9f099f34fb92083a",
+      "sourceName": "contracts/ERC721/V8_0_0/Math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/games/Baccarat.sol": {
+      "lastModificationDate": 1660056649180,
+      "contentHash": "1ddec24c951ff05acd73337f024e1264",
+      "sourceName": "contracts/games/Baccarat.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/games/GalaxyLotto.sol": {
+      "lastModificationDate": 1660053682551,
+      "contentHash": "0e278ed00d235941c968d4cd0b60a93c",
+      "sourceName": "contracts/games/GalaxyLotto.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/games/Roulette.sol": {
+      "lastModificationDate": 1660056669516,
+      "contentHash": "b29367064e54b9a33628f84b68365b2e",
+      "sourceName": "contracts/games/Roulette.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Math/Babylonian.sol": {
+      "lastModificationDate": 1659972683729,
+      "contentHash": "896cc42d4dd5f44f1da035f70de8119c",
+      "sourceName": "contracts/Math/Babylonian.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "Babylonian"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Math/FixedPoint.sol": {
+      "lastModificationDate": 1659972683732,
+      "contentHash": "5b88e06aa64de059991487fe7d51e8b2",
+      "sourceName": "contracts/Math/FixedPoint.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Babylonian.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "FixedPoint"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Math/MagnitudesAndPowers.sol": {
+      "lastModificationDate": 1659972683740,
+      "contentHash": "bd481d96855b1305e20d019d05a04b2b",
+      "sourceName": "contracts/Math/MagnitudesAndPowers.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "MagnitudesAndPowers"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Math/SignedSafeMath.sol": {
+      "lastModificationDate": 1659972683734,
+      "contentHash": "e0c366a9aaaba1ce24a292477b035aa8",
+      "sourceName": "contracts/Math/SignedSafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignedSafeMath"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/tmp/TcrToken.sol": {
+      "lastModificationDate": 1660059668601,
+      "contentHash": "ce6f014dee5ba3da8f3d41182b64f372",
+      "sourceName": "contracts/tmp/TcrToken.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.4"
+      ],
+      "artifacts": [
+        "IUpgradedToken",
+        "TcrToken"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1660053441086,
+      "contentHash": "ad7c2d0af148c8f9f097d65deeb4da6b",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/tmp/TetherToken.sol": {
+      "lastModificationDate": 1660087856922,
+      "contentHash": "6342001e2d11afcd9f3a57525551faf0",
+      "sourceName": "contracts/tmp/TetherToken.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/tmp1/Demo.sol": {
+      "lastModificationDate": 1659934298447,
+      "contentHash": "d3776d6bbd521b843709de5a34c6a537",
+      "sourceName": "contracts/tmp1/Demo.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
       ],
       "artifacts": [
         "Demo"
       ]
     },
-    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/DemoV2.sol": {
-      "lastModificationDate": 1659799930026,
-      "contentHash": "3fd4fb1ab9342ad3f349f5b80ffdb4bc",
-      "sourceName": "contracts/DemoV2.sol",
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": {
+      "lastModificationDate": 1660053441110,
+      "contentHash": "b98e2f3a856e6e7f2106fb919bacab9e",
+      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/AddressUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.2"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
+      "lastModificationDate": 1660053436669,
+      "contentHash": "d42e87f4fba2b03ab4d3c14cb53d0c51",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
       "solcConfig": {
         "version": "0.8.4",
         "settings": {
@@ -67,10 +2458,754 @@
       },
       "imports": [],
       "versionPragmas": [
-        ">=0.8.0 <0.9.0"
+        "^0.8.1"
       ],
       "artifacts": [
-        "DemoV2"
+        "AddressUpgradeable"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Uniswap/TransferHelper.sol": {
+      "lastModificationDate": 1659972645757,
+      "contentHash": "b01ec314a5111e09abe723b667a47a55",
+      "sourceName": "contracts/Uniswap/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/unstructured_save_test/UnstructuredProxy.sol": {
+      "lastModificationDate": 1659942654435,
+      "contentHash": "25b88896850af2f790ab5ef50f7e1941",
+      "sourceName": "contracts/unstructured_save_test/UnstructuredProxy.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "UnstructuredProxy"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Utils/BlockMiner.sol": {
+      "lastModificationDate": 1659972352094,
+      "contentHash": "a118156b211afab788fc2b4b6378c790",
+      "sourceName": "contracts/Utils/BlockMiner.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "BlockMiner"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Utils/BundleUtils.sol": {
+      "lastModificationDate": 1659972352100,
+      "contentHash": "7ca476f5fc1f79776213e3d2786e41fb",
+      "sourceName": "contracts/Utils/BundleUtils.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BundleUtils"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Utils/MigrationHelper.sol": {
+      "lastModificationDate": 1659972352114,
+      "contentHash": "4a29c54591012a27f2aa9ed503a5eac4",
+      "sourceName": "contracts/Utils/MigrationHelper.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "MigrationHelper"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Utils/Migrations.sol": {
+      "lastModificationDate": 1659972352097,
+      "contentHash": "54d68fc2ce1bea11dde142670827a0bd",
+      "sourceName": "contracts/Utils/Migrations.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "Migrations"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Utils/ReentrancyGuard.sol": {
+      "lastModificationDate": 1659972352117,
+      "contentHash": "61bfd302c31459378cb8e01583c8746c",
+      "sourceName": "contracts/Utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.11"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Utils/StorageSlot.sol": {
+      "lastModificationDate": 1659972352104,
+      "contentHash": "e1ee3f453f5153fb79e128ee469cc19c",
+      "sourceName": "contracts/Utils/StorageSlot.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StorageSlot"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Utils/UnstructuredProxy.sol": {
+      "lastModificationDate": 1659972358533,
+      "contentHash": "eb19dc100a069ff183afffbc680ea2cc",
+      "sourceName": "contracts/Utils/UnstructuredProxy.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "UnstructuredProxy"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/ERC20/WETH.sol": {
+      "lastModificationDate": 1659972853067,
+      "contentHash": "66a759a8a26069b6eb28acfd89a44cb0",
+      "sourceName": "contracts/ERC20/WETH.sol",
+      "solcConfig": {
+        "version": "0.6.11",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IWETH.sol"
+      ],
+      "versionPragmas": [
+        "0.6.11"
+      ],
+      "artifacts": [
+        "WETH"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Utils/StringHelpers.sol": {
+      "lastModificationDate": 1659972352111,
+      "contentHash": "86993d314fb9a292a2e71ab73ad32240",
+      "sourceName": "contracts/Utils/StringHelpers.sol",
+      "solcConfig": {
+        "version": "0.6.11",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.11"
+      ],
+      "artifacts": [
+        "StringHelpers"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/games/Dice.sol": {
+      "lastModificationDate": 1660008859733,
+      "contentHash": "18508994390fec19d8ded82865bbd807",
+      "sourceName": "contracts/games/Dice.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.4.0"
+      ],
+      "artifacts": [
+        "Dice"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/games/Lottery.sol": {
+      "lastModificationDate": 1660008951670,
+      "contentHash": "a70432bf961360ffbb62705401e12917",
+      "sourceName": "contracts/games/Lottery.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.4.8"
+      ],
+      "artifacts": [
+        "Lottery"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/games/RoundBasedGame.sol": {
+      "lastModificationDate": 1660008902762,
+      "contentHash": "16436df8d95918169bec8ab684e83cbd",
+      "sourceName": "contracts/games/RoundBasedGame.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.4.23"
+      ],
+      "artifacts": [
+        "Ownable",
+        "RoundBasedGame",
+        "SafeMath"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/libraries/Math.sol": {
+      "lastModificationDate": 1660054391493,
+      "contentHash": "bee6c1959728d5d42c14151076cebd83",
+      "sourceName": "contracts/libraries/Math.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/libraries/SafeMath.sol": {
+      "lastModificationDate": 1660054391495,
+      "contentHash": "a65356c329efeffba75210664f5df3cd",
+      "sourceName": "contracts/libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/libraries/UQ112x112.sol": {
+      "lastModificationDate": 1660054391498,
+      "contentHash": "2a703244e9f645c6fb297a983ce7c9c4",
+      "sourceName": "contracts/libraries/UQ112x112.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "UQ112x112"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/Uniswap/UniswapV2Router02.sol": {
+      "lastModificationDate": 1660062803315,
+      "contentHash": "211f4e0dbc51b1b2004b961d10bcbf2b",
+      "sourceName": "contracts/Uniswap/UniswapV2Router02.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "IERC20",
+        "IUniswapV2Factory",
+        "IUniswapV2Pair",
+        "IUniswapV2Router01",
+        "IUniswapV2Router02",
+        "IWETH",
+        "SafeMath",
+        "TransferHelper",
+        "UniswapV2Library",
+        "UniswapV2Router02"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/TetherToken.sol": {
+      "lastModificationDate": 1660087923072,
+      "contentHash": "fa9ce882c409ce5c9b3a3d019f876005",
+      "sourceName": "contracts/TetherToken.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.4.17"
+      ],
+      "artifacts": [
+        "BasicToken",
+        "BlackList",
+        "ERC20",
+        "ERC20Basic",
+        "Ownable",
+        "Pausable",
+        "SafeMath",
+        "StandardToken",
+        "TetherToken",
+        "UpgradedStandardToken"
+      ]
+    },
+    "/Users/houzi/home/Soliditycode/hardhat_solidity/contracts/TcrToken.sol": {
+      "lastModificationDate": 1660090017293,
+      "contentHash": "f9da0b89e1e5103026afa403373dc7b1",
+      "sourceName": "contracts/TcrToken.sol",
+      "solcConfig": {
+        "version": "0.8.2",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.2"
+      ],
+      "artifacts": [
+        "IERC20",
+        "IUpgradedToken",
+        "TcrToken"
       ]
     }
   }
