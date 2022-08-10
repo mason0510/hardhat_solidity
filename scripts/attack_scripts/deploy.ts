@@ -21,9 +21,10 @@ async function main() {
     const USDT = new ethers.Contract(USDTAddr, ERC20ABI.abi, provider);
     // //eth 余额
     // //owner balance contracts/Attack.sol:IERC20
-    // console.log("AttackDeployer USDT balance:", await USDT.balanceOf(AttackDeployer.address));
     await attack.startAttack();
-     console.log("AttackDeployer USDT balance:", await USDT.balanceOf(AttackDeployer.address));
+    //USDT 精度6位
+    console.log("AttackDeployer USDT balance:", await USDT.balanceOf(AttackDeployer.address));
+    //console.log("AttackDeployer USDT balance:", ethers.utils.formatEther(await USDT.balanceOf(AttackDeployer.address)));
 }
 //run result
 /**

@@ -145,3 +145,9 @@ https://stackoverflow.com/questions/67906595/get-usdt-balance-erc20-token
 https://github.com/ethers-io/ethers.js/issues/1238
 
 https://ethereum.stackexchange.com/questions/63530/source-file-requires-different-compiler-version
+
+//单位
+https://solidity-by-example.org/ether-units/
+
+//外部地址
+https://learnblockchain.cn/question/13
